@@ -52,7 +52,7 @@ namespace CountriesApp
             conn.CloseConnection();
         }
 
-        //загрузка данных при переключении на вкладку "All countries"
+        //загрузка данных при переключении на вкладку "Database"
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
             dataGridView1.DataSource = conn.LoadData();
